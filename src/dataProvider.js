@@ -1,7 +1,7 @@
 import axios from "axios";
 import { stringify } from "query-string";
 
-const apiUrl = "http://localhost:4040/api/v1";
+const apiUrl = process.env.REACT_APP_API_BASE_URL || "http://localhost:4040/api/v1";
 
 export default {
   getList: (resource, params) => {

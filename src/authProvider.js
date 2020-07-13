@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiUrl = "http://localhost:4040";
+const apiUrl = process.env.REACT_APP_API_BASE_URL || "http://localhost:4040";
 
 export default {
   // called when the user attempts to log in
